@@ -109,3 +109,5 @@ plt.imshow(grey[0], cmap = 'gray' )
 plt.imshow(color[0])
 
 autoencoder.fit(grey, color, epochs = 300, batch_size = 20, shuffle = True, validation_split = 0.15)
+x = autoencoder.predict(grey)
+plt.imshow(x[0])
