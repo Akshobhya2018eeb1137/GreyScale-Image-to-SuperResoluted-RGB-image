@@ -101,9 +101,10 @@ def makeDataset():
 makeDataset()
 print(len(color))
 print(len(grey))
-
 color = np.array(color)
 grey = np.array(grey)
+color = color / 255.
+grey = grey / 255.
 plt.imshow(grey[0], cmap = 'gray' ) 
 plt.imshow(color[0])
 
